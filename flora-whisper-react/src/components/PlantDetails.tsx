@@ -1,4 +1,3 @@
-// PlantDetailsPage.tsx
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import {
@@ -18,7 +17,7 @@ import {
 import { Fade } from "react-awesome-reveal";
 import { getPlantByIdApiCall } from "../service/FloraService";
 import type { PlantDto } from "../dto/PlantDto";
-import { useCart } from "./CartContext";
+import { useCart } from "../dto/UseCart";
 
 export default function PlantDetailsPage() {
   const { id } = useParams<{ id: string }>();
